@@ -1,4 +1,6 @@
-#include<stdio.h>
-void print_header(){
-	printf("Programming is like building a multilingual puzzle");
+#include <stdio.h>
+
+int main() {
+   puts("Programming is like building a multilingual puzzle");
+   return 0;
 }
