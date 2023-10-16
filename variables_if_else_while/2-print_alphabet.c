@@ -6,9 +6,11 @@
 * Return: Always 0 (Success)
 */
 
-int main() {
+int main(void)
+{
 	int x;
-	for(x = 'a'; x <= 'z'; x++) {
+	for(x = 'a'; x <= 'z'; x++) 
+	{
 		putchar(x);
 	}
 	putchar('\n');
