@@ -1,10 +1,16 @@
 #include <stdio.h>
 
+/**
+* main - Entery point
+*
+* Return: Always 0 (Success)
+*/
+
 int main() {
-    int x;
-    for(x = 'a'; x <= 'z'; x++) {
-        putchar(x);
-    }
-    putchar('\n');
-    return 0;
+	int x;
+	for(x = 'a'; x <= 'z'; x++) {
+		putchar(x);
+	}
+	putchar('\n');
+	return 0;
 }
