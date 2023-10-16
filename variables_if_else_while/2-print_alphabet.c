@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-int main()
-{
-    for(int x = 'a'; x <= 'z'; x++)
-    {
+int main() {
+    int x;
+    for(x = 'a'; x <= 'z'; x++) {
         putchar(x);
     }
     putchar('\n');
