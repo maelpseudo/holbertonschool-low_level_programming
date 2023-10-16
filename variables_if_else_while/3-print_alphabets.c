@@ -1,25 +1,20 @@
 #include <stdio.h>
-
 /**
-* main - Entery point
-*
-* Return: Always 0 (Success)
-*/
-
+ * main - prints the alphabet in lowercase, and then in uppercase
+ *
+ * Return: 0 (Success)
+ */
 int main(void)
 {
-	int x;
-	int y;
-
-	for (x = 'a' ; x <= 'z' ; x++)
-	{
-		putchar(x);
-	}
-	putchar('\n');
-	for (y = 'A' ; y <= 'Z' ; y++)
-        {
-                putchar(y);
-        }
-        putchar('\n');
-	return (0);
+char i;
+for (i = 'a'; i <= 'z'; i++)
+{
+putchar (i);
+}
+for (i = 'A'; i <= 'Z'; i++)
+{
+putchar (i);
+}
+putchar ('\n');
+return (0);
 }
