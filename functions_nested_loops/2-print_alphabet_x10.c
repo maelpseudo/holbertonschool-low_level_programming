@@ -6,7 +6,7 @@
  * return: no value
  */
 
-int print_alphabet_x10(void)
+void print_alphabet_x10(void)
 {
 	int i, x;
 
@@ -18,5 +18,4 @@ int print_alphabet_x10(void)
 		}
 	putchar('\n');
 	}
-	return (0);
 }
