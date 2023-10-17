@@ -3,7 +3,7 @@
 /**
  * print_alphabet_x10 - prints 10X alphabet
  *
- * return: no return value
+ * return: 0 (Success)
  */
 
 int print_alphabet_x10(void)
