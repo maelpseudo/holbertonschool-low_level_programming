@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * Main - Write a function that prints 10 times the alphabet, in lowercase
+ * print_alphabet_x10 - prints 10X alphabet
  *
- * Return: 0 (Success)
+ * return: no return value
  */
 
 int print_alphabet_x10(void)
