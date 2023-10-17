@@ -1,8 +1,8 @@
-#include "main.h" // Include your custom header file
+#include "main.h"
 
 int main(void)
 {
-print_alphabet(); // Call the print_alphabet function
+print_alphabet_x10();
 
 return (0);
 }
