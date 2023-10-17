@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * Main - Print alphabet 10 times
+ *
+ * Return: 0 (Success)
+ */
+
 int print_alphabet_x10(void)
 {
 	int i, x;
