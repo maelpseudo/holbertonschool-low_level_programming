@@ -2,8 +2,8 @@
 
 /**
  * Main - Write a function that checks for alphabetic character.
- *
- * Return: 0 (Success)
+ * @c: input letter
+ * Return 1 if letter, 0 if not
  */
 
 int _isalpha(int c)
