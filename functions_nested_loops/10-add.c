@@ -4,7 +4,7 @@
 /**
  * add - function that adds two integers and return the result
  *
- * result: return sum
+ * result: return result of 'a' + 'b'
  */
 
 int add(int a, int b)
