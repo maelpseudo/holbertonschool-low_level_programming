@@ -2,17 +2,21 @@
 #include "main.h"
 
 void times_table(void) {
-    int i, j;
+    int rone, cone, d;
 
-    for (i = '0'; i <= '9'; i++) {
-        for (j = '0'; j <= '9'; j++) {
-            if (j == '9')
-	    {
-                printf("%2d", i * j);
+    for (rone = 0; rone <= 9; rone++) {
+        for (cone = 0; cone <= 9; cone++) {
+            d = rone * cone;
+
+            if (d < 10) {
+                printf("%d", d);
+            } else {
+                printf("%d", d / 10);
+                printf("%d", d % 10);
             }
-	    else
-	    {
-                printf("0, %2d, ", i * j);
+
+            if (cone < 9) {
+                printf(", ");
             }
         }
         printf("\n");
