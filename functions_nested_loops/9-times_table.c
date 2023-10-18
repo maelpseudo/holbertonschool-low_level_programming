@@ -6,9 +6,16 @@ void times_table(void) {
 
     for (i = 1; i <= 9; i++) {
         for (j = 0; j <= 9; j++) {
-            if (j == 9) {
+            if (j == 9)
+	    {
                 printf("%2d", i * j);
-            } else {
+            } 
+	    else if (j == 1)
+	    {
+		printf("0, %2d", i * j)
+	    }
+	    else
+	    {
                 printf("0, %2d, ", i * j);
             }
         }
