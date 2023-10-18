@@ -9,18 +9,14 @@
 
 void times_table(void)
 {
-	int n = 9, nbr1 = 0, nbr2 = 1, suivant, i;
+	int nbren=1,i,som=0;
 
-	for (i = 0; i < n; i++)
+	for(i=1;i<=max;i++)
 	{
-		if (i <= 1)
-			suivant = i;
-		else
-		{
-			suivant = nbr1 + nbr2;
-			nbr1 = nbr2;
-			nbr2 = suivant;
-		}
-			printf("%d\n", suivant);
+		printf("%d\n",nbren);
+		som=som+nbren;
+		nbren=nbren+som;
 	}
+	system("pause");
+	return(0);
 }
