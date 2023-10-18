@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * add - function that adds two integers and return the result
- * @a : first input integer
- * @b : second input integer
- * result: return result of 'a' + 'b'
+ * add - a function that adds two integers and returns the result
+ *@a: integer input
+ *@b: integer input
+ * Return: an integer
  */
 
 int add(int a, int b)
