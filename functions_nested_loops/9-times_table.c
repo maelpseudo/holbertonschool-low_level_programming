@@ -12,8 +12,8 @@ void times_table(void) {
             if (d < 10) {
                 printf("%d", d);
             } else {
-                printf("%d", d / 10);
-                printf("%d", d % 10);
+                printf(" %d", d / 10);
+                printf(" %d", d % 10);
             }
 
             if (cone < 9) {
