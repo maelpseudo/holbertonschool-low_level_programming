@@ -12,7 +12,7 @@ void times_table(void) {
             } 
 	    else if (j == 1)
 	    {
-		printf("0, %2d", i * j)
+		printf("0, %2d", i * j);
 	    }
 	    else
 	    {
