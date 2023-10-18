@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * jack-bauer - print all minutes from 00:00 to 23:59
+ * jack_bauer - print all minutes from 00:00 to 23:59
  *
  * result: none
  */
@@ -15,7 +15,7 @@ void jack_bauer(void)
 	{
 		for (m = 0; m < 60; m++)
 		{
-			printf ("%02d:%02d\n", h, m);
+			printf("%02d:%02d\n", h, m);
 		}
 	}
 }
