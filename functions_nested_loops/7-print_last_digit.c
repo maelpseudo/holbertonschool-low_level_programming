@@ -7,11 +7,6 @@
  * Return: last digit of n
  */
 
-int main(void)
-{
-	int lastDigit;
-}
-
 int print_last_digit(int n)
 {
 	int lastDigit;
