@@ -1,39 +1,35 @@
 #include <stdio.h>
 #include "main.h"
 
-void times_table(void) {
-    int rone, cone, d;
+void times_table(void)
+{
+	int i, j, d;
 
-    for (rone = 0; rone <= 9; rone++) {
-        for (cone = 0; cone <= 9; cone++) {
-            d = rone * cone;
-		if (j < 10)
-		{	
-            if (d < 10) {
-                printf("%d", d);
-            } else {
-                printf(" %d", d / 10);
-                printf(" %d", d % 10);
-            }
+	for (i = 0; i <= 9; i++)
+	{
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
+		for (j = 1; j <= 9; j++)
+		{
+			d = (i * j);
+			if ((d / 10) > 0)
+			{
+				_putchar((d / 10) + '0');
+			}
+			else
+			{
+				_putchar(' ');
+			}
+			_putchar((d % 10) + '0');
 
-            if (cone < 9) {
-                printf(", ");
-            }
+			if (j < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
-		else
-                {
-            if (d < 10) {
-                printf("%d", d);
-            } else {
-                printf("%d", d / 10);
-                printf("%d", d % 10);
-            }
+		_putchar('\n');
+	}
 
-            if (cone < 9) {
-                printf(", ");
-            }
-                }
-        }
-        printf("\n");
-    }
 }
