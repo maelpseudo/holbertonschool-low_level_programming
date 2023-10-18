@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- *
- *
- *
+ * _abs - a function that computes the absolute value of n
+ *@n: input integer
+ * Return: No return
  */
 
 int _abs(int n)
@@ -15,7 +15,7 @@ int _abs(int n)
 	}
 	else if (n < 0)
 	{
-	n = n*(-1);
+	n = (n * (-1));
 	return(n);
 	}
 	else
