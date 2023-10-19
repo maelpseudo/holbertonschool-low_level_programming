@@ -1,22 +1,25 @@
+# Makefile for the 'school' executable
 
+# Define the compiler and compiler flags
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic -O2
 
+# Define the source files
 SRCS = main.c student.c teacher.c
-OBJS = $(SRCS:.c=.o)
 
+# Define the target executable
 TARGET = school
 
+# The 'all' rule to build the executable
 all: $(TARGET)
 
-$(TARGET): $(OBJS)
+# Link the object files to create the executable
+$(TARGET): $(SRCS)
 	$(CC) $(CFLAGS) -o $@ $^
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $<
-
+# Clean up generated files
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -f $(TARGET)
 
 .PHONY: all clean
 
