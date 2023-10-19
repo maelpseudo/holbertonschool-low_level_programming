@@ -1,9 +1,22 @@
-#include <stdio.h>
-#include <hellomake.h>
 
-void myPrintHelloMake(void) {
+CC = gcc
+CFLAGS = -Wall -Wextra -pedantic -O2
 
-  printf("Hello makefiles!\n");
+SRCS = main.c student.c teacher.c
+OBJS = $(SRCS:.c=.o)
 
-  return (1);
-}
+TARGET = school
+
+all: $(TARGET)
+
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $^
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+clean:
+	rm -f $(OBJS) $(TARGET)
+
+.PHONY: all clean
+
