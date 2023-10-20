@@ -8,14 +8,13 @@ all:
 	$(CC) $(SRC) -o $(NAME)
 
 clean:
-
+	rm -f $(OBJ) $(NAME) *~ .*~
 
 oclean:
-
+	rm -f $(OBJ) $(NAME) *.o
 
 fclean:
-
+	rm -f $(OBJ) $(NAME)
 
 re:
-
 
