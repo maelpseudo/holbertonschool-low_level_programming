@@ -7,14 +7,16 @@ RM=rm
 all:
 	$(CC) $(SRC) -o $(NAME)
 
+%.o: %.c
+	$(CC) -c $< -o $@
+
 clean:
-	$(RM) -f $(OBJ) $(NAME) *~ .*~
+	$(RM) -f *~ $(OBJ)
 
 oclean:
-	$(RM) -f $(OBJ) $(NAME) *.o
+	$(RM) -f $(OBJ)
 
-fclean:
-	$(RM) -f $(OBJ) $(NAME)
+fclean: clean oclean
 
-re:
+re: oclean all
 
