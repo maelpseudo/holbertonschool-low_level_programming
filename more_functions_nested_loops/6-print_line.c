@@ -4,7 +4,7 @@
 /**
  * print_line - a function that draws a straight line in the terminal
  * @n: input integer
- * Return: 0 (Success)
+ * Return: void
  */
 
 void print_line(int n)
@@ -15,7 +15,6 @@ void print_line(int n)
 	if (n == 0)
 	{
 		putchar('\n');
-		return (0);
 	}
 	else
 	{
@@ -24,6 +23,5 @@ void print_line(int n)
 			putchar('_');
 		}
 		putchar('\n');
-		return(0);
 	}
 }
