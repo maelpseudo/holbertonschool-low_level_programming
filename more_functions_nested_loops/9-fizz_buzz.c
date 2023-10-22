@@ -4,10 +4,10 @@
 /**
  * main - Fizz-Buzz test
  *
- * Return: void
+ * Return: Always 0 (Success)
  */
 
-int main(void)
+int main()
 {
 	int i;
 
@@ -26,4 +26,5 @@ int main(void)
 			printf("%d ", i);
 		}
 	}
+	return (0);
 }
