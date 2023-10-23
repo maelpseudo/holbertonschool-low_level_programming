@@ -3,9 +3,10 @@
 #include <string.h>
 
 /**
- * 
- * 
- * 
+ * _strcpy - a function that copy a pointer
+ * @src: input integer
+ * @dest: pointer to integer
+ * return: @dest
 */
 
 char *_strcpy(char *dest, char *src)
