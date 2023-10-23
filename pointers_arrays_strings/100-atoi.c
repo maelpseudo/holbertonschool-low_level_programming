@@ -16,6 +16,10 @@ int _atoi(char *s)
 
     for (i = 0; i < length; i++)
     {
+        if ((s[i] == '-') && (isdigit(s[i + 1])))
+        {
+            result = result * 10 + (s[i] - '0');
+        }
         if (isdigit(s[i]))
         {
             result = result * 10 + (s[i] - '0');
