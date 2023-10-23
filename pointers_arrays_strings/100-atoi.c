@@ -19,8 +19,9 @@ int _atoi(char *s) {
             sign = -1;
         } else if (isdigit(s[i])) {
             result = result * 10 + (s[i] - '0');
+        } else if (s[i] == '+') {
         } else {
-            break;
+            continue;
         }
     }
 
