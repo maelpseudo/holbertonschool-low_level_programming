@@ -15,6 +15,6 @@ int i;
 
 for (i = length - 1; i >= 0; i--)
 {
-putchar(s[i]); // Affiche le caractère courant
+putchar(s[i]);
 }
 }
