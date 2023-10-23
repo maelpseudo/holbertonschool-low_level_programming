@@ -19,7 +19,7 @@ if (length == 0)
 }
 else
 {
-for (i = 0; i <= length; i++)
+for (i = 0; i < length; i++)
 {
 if (i % 2 == 0)
 {
