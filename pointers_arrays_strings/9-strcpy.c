@@ -3,11 +3,11 @@
 #include <string.h>
 
 /**
- * _strcpy - a function that copy a pointer
+ * _strcpy - a function that copies the string pointed to by src
  * @dest: pointer to a character
  * @src: pointer to a character
- * return: the pointer to dest
-*/
+ * Return: the pointer to dest
+ */
 
 char *_strcpy(char *dest, char *src)
 {
