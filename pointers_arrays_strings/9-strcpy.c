@@ -6,7 +6,7 @@
  * _strcpy - a function that copy a pointer
  * @src: input integer
  * @dest: pointer to integer
- * return: result of @dest
+ * return: the pointer to dest
 */
 
 char *_strcpy(char *dest, char *src)
