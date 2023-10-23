@@ -19,7 +19,7 @@ for (i = 0; i < length; i++)
 {
 if (i % 2 == 0)
 {
-    putchar(str[i]);
+putchar(str[i]);
 }
 }
 }
