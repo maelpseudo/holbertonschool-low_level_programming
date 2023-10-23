@@ -8,7 +8,10 @@
  * 
 */
 
-void print_rev(char *s)
-{
-printf("%d\n", strrev(*s));
+void print_rev(char *s) {
+    int length = strlen(s);
+    for (int i = length - 1; i >= 0; i--) {
+        putchar(s[i]); // Affiche le caractère courant
+    }
+    putchar('\n'); // Affiche un saut de ligne à la fin
 }
