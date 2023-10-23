@@ -16,6 +16,6 @@ int _atoi(char *s)
 
     for (i = 0; i < length; i++)
     {
-        var =+ s[i];
+        var = var + s[i];
     }
 }
