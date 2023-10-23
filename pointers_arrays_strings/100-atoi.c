@@ -9,24 +9,17 @@
  * 
 */
 
-int _atoi(char *s) {
-    int i, sum = 0;
-    int sign = 1;
-    int started = 0;
+int _atoi(char *s)
+{
+    int length = strlen(s);
+    int i, result = 0;
 
-    for (i = 0; s[i] != '\0'; i++) {
-        if (isdigit(s[i])) {
-            sum = (sum * 10) + (s[i] - '0');
-            started = 1;
-        } else if (s[i] == '-' && !started) {
-            sign = -1;
-        } else if (started) {
-            break;
+    for (i = 0; i < length; i++)
+    {
+        if (isdigit(s[i]))
+        {
+            result = result + s[i];
         }
     }
-    if (!started) {
-        return 0;
-    }
-
-    return (sum * sign) * -1;
+    return(result);
 }
