@@ -13,11 +13,7 @@ void puts2(char *str)
 
 int i;
 int length = strlen(str);
-if (length == 0)
-{
-    putchar('\n');
-}
-else
+if (length != 0)
 {
 for (i = 0; i < length; i++)
 {
