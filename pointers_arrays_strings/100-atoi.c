@@ -8,15 +8,11 @@
  * 
 */
 
-int _atoi(char *s)
-{
-    int i;
-    int var;
-    int length = strlen(s);
-
-    for (i = 0; i < length; i++)
-    {
-        var = var + s[i];
+int _atoi(const char *s) {
+    int i, sum = 0;
+    for (i = 0; isdigit(*s); s++) {
+        sum = (sum * 10) + (*s - '0');
+        i++;
     }
-    return (0);
+    return sum;
 }
