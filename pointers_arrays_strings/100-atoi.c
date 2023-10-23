@@ -18,4 +18,5 @@ int _atoi(char *s)
     {
         var = var + s[i];
     }
+    return (0);
 }
