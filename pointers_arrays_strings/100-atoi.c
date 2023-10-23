@@ -24,6 +24,9 @@ int _atoi(char *s) {
             break;
         }
     }
+    if (!started) {
+        return 0;
+    }
 
     return (sum * sign) * -1;
 }
