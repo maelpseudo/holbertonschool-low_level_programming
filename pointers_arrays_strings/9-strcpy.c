@@ -4,8 +4,8 @@
 
 /**
  * _strcpy - a function that copy a pointer
- * @src: input integer
- * @dest: pointer to integer
+ * @dest: pointer to a character
+ * @src: pointer to a character
  * return: the pointer to dest
 */
 
