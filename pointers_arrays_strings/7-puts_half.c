@@ -3,9 +3,9 @@
 #include <string.h>
 
 /**
- * 
- * 
- * 
+ * puts_half - function that print the half end of a string
+ * @str: input integer
+ * return: void
 */
 
 void puts_half(char *str)
