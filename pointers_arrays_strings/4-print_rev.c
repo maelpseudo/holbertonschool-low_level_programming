@@ -13,7 +13,7 @@ void print_rev(char *s) {
     int i;
 
     for (i = length - 1; i >= 0; i--) {
-        putchar(s[i]); // Affiche le caractère courant
+        putchar(s[i]);
     }
-    putchar('\n'); // Affiche un saut de ligne à la fin
+    putchar('\n');
 }
