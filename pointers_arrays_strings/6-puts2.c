@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * puts2 - function that print 1/2 character 
+ * puts2 - function that print 1/2 character
  * @str: input integer
  * return: void
 */
