@@ -10,7 +10,7 @@
 
 int _atoi(char *s)
 {
-    int i;;
+    int i;
     int var;
     int length = strlen(s);
 
