@@ -9,12 +9,22 @@
  * 
 */
 
-int _atoi(char *s)
-{
+int _atoi(char *s) {
     int i, sum = 0;
-    for (i = 0; isdigit(*s); s++) {
-        sum = (sum * 10) + (*s - '0');
-        i++;
-    }
-    return sum;
+    int sign = 1;
+
+while (*s && !isdigit(*s))
+{
+if (*s == '-') {
+sign = -1;
+}
+s++;
+}
+
+while (isdigit(*s))
+{
+sum = (sum * 10) + (*s - '0');
+s++;
+}
+return sum * sign;
 }
