@@ -10,12 +10,16 @@
 */
 
 int _atoi(char *s) {
-    int length = strlen(s);
-    int i, result = 0;
+    int i = 0;
+    int result = 0;
     int sign = 1;
     int started = 0;
 
-    for (i = 0; i < length; i++) {
+    while (s[i] != '\0') {
+        i++;
+    }
+
+    for (i = 0; i < i; i++) {
         if (isdigit(s[i])) {
             int digit = s[i] - '0';
             result = result * 10 + digit;
