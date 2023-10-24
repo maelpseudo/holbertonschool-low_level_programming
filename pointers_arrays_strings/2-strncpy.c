@@ -14,7 +14,7 @@ char *_strncpy(char *dest, char *src, int n)
     int j;
     int length = strlen(dest);
 
-    for (; 0 <= n; n--)
+    for (; n >= 0; n--)
     {
         for (j = 0; j <= length; j++)
         {
