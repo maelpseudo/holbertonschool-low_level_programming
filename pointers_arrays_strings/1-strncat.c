@@ -3,10 +3,11 @@
 #include <string.h>
 
 /**
- * 
- * 
- * 
- * 
+ * _strncat - a function that concatenate two string with a max (n)
+ * @dest: pointer to a char
+ * @src: pointer to a char
+ * @n: input integer
+ * Return: dest
 */
 
 char *_strncat(char *dest, char *src, int n)
