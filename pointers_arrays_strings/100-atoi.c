@@ -14,8 +14,9 @@ int _atoi(char *s) {
     int result = 0;
     int sign = 1;
     int started = 0;
+    int i;
 
-    for (int i = 0; i < length; i++) {
+    for (i = 0; i < length; i++) {
         if (s[i] == '-') {
             if (isdigit(s[i + 1])) {
                 sign = -1;
