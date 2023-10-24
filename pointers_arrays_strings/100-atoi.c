@@ -11,11 +11,11 @@
 
 int _atoi(char *s) {
     int length = strlen(s);
-    int i, result = 0;
+    int result = 0;
     int sign = 1;
     int started = 0;
 
-    for (i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++) {
         if (s[i] == '-') {
             if (isdigit(s[i + 1])) {
                 sign = -1;
