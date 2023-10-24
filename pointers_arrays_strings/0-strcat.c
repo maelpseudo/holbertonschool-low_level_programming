@@ -13,9 +13,9 @@ char *_strcat(char *dest, char *src)
 
     int i, j;
 
-    putchar(dest);
+    putchar(*dest);
     putchar('\n');
-    putchar(src);
+    putchar(*src);
     putchar('\n');
 
     while(dest[i]!='\0')
@@ -27,11 +27,11 @@ char *_strcat(char *dest, char *src)
     i++;
   }
   dest[i]='\0';
-  putchar(dest);
+  putchar(*dest);
   putchar('\n');
-  putchar(src);
+  putchar(*src);
   putchar('\n');
-  putchar(dest);
+  putchar(*dest);
   putchar('\n');
   return (0);
 }
