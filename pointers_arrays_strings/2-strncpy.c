@@ -12,7 +12,7 @@
 char *_strncpy(char *dest, char *src, int n)
 {
     int i, j;
-    int length = strlen(*dest);
+    int length = strlen(dest);
 
     for (; 0 <= n; n--)
     {
