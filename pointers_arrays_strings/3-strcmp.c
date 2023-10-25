@@ -22,7 +22,8 @@ int _strcmp(char *s1, char *s2)
     }
     else if (len1 < len2)
     {
-        return ("-%d\n", len1);
+        len1 = "-" + len1;
+        return (len1);
     }
     else
     {
