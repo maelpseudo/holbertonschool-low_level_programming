@@ -12,7 +12,7 @@
 char *string_toupper(char *n)
 {
 
-    int i;
+    char i;
 
     i = toupper(*n);
     return (i);
