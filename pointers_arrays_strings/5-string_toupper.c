@@ -11,6 +11,9 @@
 
 char *string_toupper(char *n)
 {
-    toupper(*n);
-    return (n);
+
+    int i;
+
+    i = toupper(*n);
+    return (i);
 }
