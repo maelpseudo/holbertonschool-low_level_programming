@@ -20,10 +20,10 @@ return (0);
 }
 else if (len1 < len2)
 {
-return (-13);
+return (13);
 }
 else
 {
-return (13);
+return (-13);
 }
 }
