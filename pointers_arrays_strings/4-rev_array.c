@@ -11,12 +11,11 @@
 
 void reverse_array(int *a, int n)
 {
-    int length = strlen(*a);
     int result;
 
-    for(; length >= 0; length--)
+    for(; a >= 0; a--)
     {
-        result = result + a[length];
+        result = result + a[a];
     }
 
 }
