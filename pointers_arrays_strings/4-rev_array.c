@@ -11,7 +11,7 @@
 
 void reverse_array(int *a, int n)
 {
-    int length = strlen(a);
+    int length = strlen(*a);
     int result;
 
     for(; length >= 0; length--)
