@@ -12,8 +12,14 @@
 char *string_toupper(char *n)
 {
 
-    char *i;
+int i;
 
-    *i = toupper(*n);
-    return (*i);
+for (i = 0; n[i] != '\0' ; i++)
+{
+if (n[i] >= 'a' && n[i] <= 'z')
+{
+n[i] = n[i] - 32;
+}
+}
+return (n);
 }
