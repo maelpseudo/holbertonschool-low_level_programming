@@ -4,9 +4,9 @@
 #include <ctype.h>
 
 /**
- * 
- * 
- * 
+ * string_toupper - transform all lowercase letter to uppercase letter in a string
+ * @n: pointer to a char
+ * Return: @n
 */
 
 char *string_toupper(char *n)
