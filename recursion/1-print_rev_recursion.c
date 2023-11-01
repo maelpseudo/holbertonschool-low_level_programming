@@ -15,6 +15,10 @@ void _print_rev_recursion(char *s, int len) {
     }
 
     printf("%c", s[len - 1]);
-
     _print_rev_recursion(s, len - 1);
+}
+
+void print_reverse(char *s) {
+    int len = strlen(s);
+    _print_rev_recursion(s, len);
 }
