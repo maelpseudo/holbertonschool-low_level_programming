@@ -16,7 +16,7 @@ int factorial(int n) {
             result *= n;
             n--;
             factorial(n);
+            return result;
         }
-        return result;
     }
 }
