@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * factorial - a function that returns the factorial of a given number
+ * factorial - function that returns the factorial of a given number
  * @n: input integer
  * Return: interger
  */
