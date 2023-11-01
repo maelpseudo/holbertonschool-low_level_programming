@@ -4,7 +4,7 @@
 #include <math.h>
 
 /**
- * find_sqrt - a function that checks the number's square
+ * find_sqrt - function that checks the number's square
  * @x: integer input
  * @y: integer input
  * Return: The square of 'a', otherwise -1
