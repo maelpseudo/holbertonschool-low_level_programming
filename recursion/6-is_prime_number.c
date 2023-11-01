@@ -5,7 +5,7 @@
 #include <string.h>
 
 /**
- * is_prime_number - a function that returns 1 if a is a prime number
+ * is_prime_number - function that returns 1 if a is a prime number
  * @n: input integer
  * Return: 1 if n is a prime number, otherwise 0
  */
