@@ -4,18 +4,29 @@
 #include <math.h>
 
 /**
- * 
- * 
- * 
- * 
-*/
-
-int _pow_recursion(int x, int y)
+ * find_sqrt - a function that checks the number's square
+ * @x: integer input
+ * @y: integer input
+ * Return: The square of 'a', otherwise -1
+ */
+int find_sqrt(int x, int y)
 {
-	if (y < 0)
+	if (y * y == x)
+	{
+		return (y);
+	}
+	else if (y * y > x)
+	{
 		return (-1);
-	else if (y == 0)
-		return (1);
-	else
-		return (x *  _pow_recursion(x, (y - 1)));
+	}
+	return (find_sqrt(x, y + 1));
+}
+/**
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: input integer
+ * Return: natural square of n otherwise -1
+ */
+int _sqrt_recursion(int n)
+{
+return (find_sqrt(n, 1));
 }
