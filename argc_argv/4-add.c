@@ -8,11 +8,13 @@
 */
 
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
 int main(int argc, char *argv[])
 {
-int i = 0;
-int sum = 0;
-int isValid = 1;
+int i, sum = 0;
 if (argc == 1)
 {
 printf("0\n");
