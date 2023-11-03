@@ -11,7 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-int i, sum = 0;
+int i;
+int sum = 0;
 int isValid = 1;
 if (argc == 1)
 {
