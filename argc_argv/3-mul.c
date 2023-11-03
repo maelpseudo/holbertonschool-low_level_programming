@@ -32,7 +32,8 @@ return (1);
 j++;
 }
 int currentNum = atoi(argv[i]);
-if (currentNum < 0) {
+if (currentNum < 0)
+{
 printf("Error\n");
 return (1);
 }
