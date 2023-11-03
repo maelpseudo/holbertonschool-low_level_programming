@@ -1,16 +1,14 @@
 #include "main.h"
 #include <stdio.h>
-
-/**
- * 
- * 
- * 
-*/
-
-
-#include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+
+/**
+ * main - program that adds positive numbers
+ * @argc: input integer
+ * @argv: input integer
+ * Return: 0 (Success)
+*/
 
 int main(int argc, char *argv[])
 {
