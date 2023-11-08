@@ -16,7 +16,7 @@ char *arr;
 
 if (size == 0)
 {
-return NULL;
+return (NULL);
 }
 
 arr = (char *)malloc(size * sizeof(char));
