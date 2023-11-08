@@ -4,9 +4,10 @@
 #include <string.h>
 
 /**
- * 
- * 
- * 
+ * str_concat - a function that concatenates two strings
+ * @s1: char
+ * @s2: char
+ * Return: result
 */
 
 char *str_concat(char *s1, char *s2) {
