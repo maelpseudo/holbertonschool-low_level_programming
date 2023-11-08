@@ -11,17 +11,24 @@
 
 char *_strdup(char *str)
 {
-if(str == NULL)
-{
-return (NULL);
-}
-else
-{
-int len = strlen(str);
-char *dup, i;
-dup = (char *)malloc(sizeof(char) * (len + 1));
-strcpy(dup, str);
-return (dup);
-free(dup);
-}
+	char *new_str;
+	int i, len;
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
+	len = strlen(str);
+	new_str = malloc(sizeof(char) * len + 1);
+	if (new_str == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < len; i++)
+	{
+		new_str[i] = str[i];
+	}
+	new_str[len] = '\0';
+	return (new_str);
 }
