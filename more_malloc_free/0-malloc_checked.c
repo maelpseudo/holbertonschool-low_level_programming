@@ -8,11 +8,12 @@
  * Return: ptr
 */
 
-void *malloc_checked(unsigned int b) {
-    void *ptr = malloc(b);
-    if (ptr == NULL) {
-        fprintf(stderr, "Memory allocation failed. Exiting...\n");
-        exit(98);
-    }
-    return ptr;
+void *malloc_checked(unsigned int b)
+{
+void *ptr = malloc(b);
+if (ptr == NULL) {
+printf(stderr, "Memory allocation failed. Exiting...\n");
+exit(98);
+}
+return ptr;
 }
