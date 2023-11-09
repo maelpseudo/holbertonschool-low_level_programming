@@ -1,44 +1,43 @@
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
 #include <string.h>
-#include "main.h"
+#include <stdio.h>
 
 /**
- * string_nconcat - function that concatenates two strings
+ * string_nconcat - function that concatenates two strings.
  * @s1: char
  * @s2: char
  * @n: unsigned int
- * Return: result or null if result is null
-*/
+ * Return: a pointer to newly allocated memory
+ */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int s1_len = (s1 != NULL) ? strlen(s1) : 0;
-unsigned int s2_len = (s2 != NULL) ? strlen(s2) : 0;
+unsigned int len1, len2;
+char *str;
 
-if (n >= s2_len)
+if (s1 == NULL)
 {
-n = s2_len;
+s1 = "";
+}
+if (s2 == NULL)
+{
+s2 = "";
 }
 
-char *result = malloc(s1_len + n + 1);
+len1 = strlen(s1);
+len2 = strlen(s2);
 
-if (result == NULL)
+if (n >= len2)
+len2 = n;
+{
+str = malloc(sizeof(char) * (len1 + n + 1));
+if (str == NULL)
 {
 return (NULL);
 }
-
-if (s1 != NULL)
-{
-strcpy(result, s1);
+strcpy(str, s1);
+strncat(str, s2, n);
 }
-else
-{
-result[0] = '\0';
-}
-
-strncat(result + s1_len, s2, n);
-
-result[s1_len + n] = '\0';
-return (result);
+return (str);
 }
