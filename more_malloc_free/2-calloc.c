@@ -12,17 +12,22 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+unsigned int i;
+void *arr;
+
 if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
-
-void *ptr = malloc(nmemb * size);
-
-if (ptr != NULL)
+else
+arr = malloc(nmemb * size);
+if (arr == NULL)
 {
-memset(ptr, 0, nmemb * size);
+return (NULL);
 }
-
-return (ptr);
+for (i = 0; i < nmemb * size; i++)
+{
+((char *)arr)[i] = 0;
+}
+return (arr);
 }
