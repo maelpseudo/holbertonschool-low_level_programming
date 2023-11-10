@@ -15,16 +15,22 @@ if (min > max)
 return (NULL);
 }
 
-int array_size = max - min + 1;
+int array_size;
 
-int *result = malloc(array_size * sizeof(int));
+array_size = max - min + 1;
+
+int *result;
+
+result = malloc(array_size * sizeof(int));
 
 if (result == NULL)
 {
 return (NULL);
 }
 
-for (int i = 0; i < array_size; i++)
+int i;
+
+for (i = 0; i < array_size; i++)
 {
 result[i] = min + i;
 }
