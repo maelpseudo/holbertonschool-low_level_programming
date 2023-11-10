@@ -4,9 +4,9 @@
 
 /**
  * array_range - function that creates an array of integers
- * @min: input integer
- * @max: input integer
- * Return: result
+ * @min: input min integer
+ * @max: input max integer
+ * Return: pointer to newly created array
  */
 
 int *array_range(int min, int max)
