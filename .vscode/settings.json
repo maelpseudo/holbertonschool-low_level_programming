@@ -4,6 +4,7 @@
         "math.h": "c",
         "*.a": "c",
         "stdlib.h": "c",
-        "main.h": "c"
+        "main.h": "c",
+        "stdio.h": "c"
     }
 }
