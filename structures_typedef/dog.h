@@ -1,6 +1,12 @@
-#ifndef DOG_H
-#define DOG_H
-
+#ifndef dog_h
+#define dog_h
+/**
+ * struct dog - structure
+ * @name: first element
+ * @age: second element
+ * @owner: third element
+ * description: structure containing three elements
+ */
 typedef struct dog
 {
 	char *name;
