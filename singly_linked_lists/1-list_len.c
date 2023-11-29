@@ -15,6 +15,5 @@ while (h != NULL)
 count++;
 h = h->next;
 }
-
 return count;
 }
