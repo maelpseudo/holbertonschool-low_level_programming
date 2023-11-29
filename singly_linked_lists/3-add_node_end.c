@@ -2,6 +2,13 @@
 #include <string.h>
 #include <stdlib.h>
 
+/**
+ * add_node_end - new node at the end
+ * @head: a pointer to the first node in the list
+ * @str: pointer to character
+ * Return: the address of the new element
+ */
+
 list_t *add_node_end(list_t **head, const char *str)
 {
     list_t *new_node, *temp;
