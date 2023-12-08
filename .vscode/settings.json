@@ -5,7 +5,9 @@
         "*.a": "c",
         "stdlib.h": "c",
         "main.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "unistd.h": "c",
+        "types.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
