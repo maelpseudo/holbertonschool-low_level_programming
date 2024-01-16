@@ -1,5 +1,5 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef SEARCH_ALGO
+#define SEARCH_ALGO
 
 #include <stdio.h>
 
